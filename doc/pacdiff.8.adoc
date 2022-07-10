@@ -45,7 +45,7 @@ Options
 	Print files instead of merging them.
 
 *\--nocolor*::
-	Remove colors from output.
+	Do not colorize output.
 
 *-c, \--cachedir <dir>*::
 	Scan 'dir' instead as the pacman cache for 3-way merge base candidates.

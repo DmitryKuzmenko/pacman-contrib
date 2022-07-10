@@ -41,7 +41,7 @@ Options
 	'\--linear' options are ignored.
 
 *-h, \--help*::
-	Output syntax and command-line options.
+	Display syntax and command-line options.
 
 *-l, \--linear*::
 	Prints package names at the start of each line, one per line.

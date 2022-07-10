@@ -24,7 +24,7 @@ Options
 	Display version information and exit.
 
 *-m, \--nocolor*::
-	Disable colorized output messages.
+	Do not colorize output.
 
 
 See Also

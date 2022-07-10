@@ -15,8 +15,8 @@ args=(
 	'(--reverse -r)'{--reverse,-r}'[list packages that depend on the named package]'
 	'(--sync -s)'{--sync,-s}'[search sync databases instead of local]'
 	'(--unique -u)'{--unique,-u}'[show dependencies with no duplicates (implies -l)]'
-	'(-)'{--help,-h}'[display help message]'
-	'(-)'{--version,-v}'[display the version]'
+	'(-)'{--help,-h}'[display help message and exit]'
+	'(-)'{--version,-V}'[display version information and exit]'
 
 	'*:package:{_values "package" $(pacman -Qq)}'
 )

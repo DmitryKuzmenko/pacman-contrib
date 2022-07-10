@@ -50,7 +50,7 @@ Options
 	Apply force to 'mv' and 'rm' operations.
 
 *-h, \--help*::
-	Display syntax and command line options.
+	Display syntax and command-line options.
 
 *-i, \--ignore <pkgs>*::
 	Specify packages to ignore, comma-separated. Alternatively "-" can be used
@@ -61,7 +61,7 @@ Options
 	default is 3.
 
 *\--nocolor*::
-	Remove color from the output.
+	Do not colorize output.
 
 *-q, \--quiet*::
 	Minimize the output.
@@ -71,6 +71,9 @@ Options
 
 *-v, \--verbose*::
 	Increase verbosity, can be specified up to 3 times.
+
+*-V, \--version*::
+	Display version information.
 
 *-z, \--null*::
 	Use null delimiters for candidate names (only with -v and -vv).

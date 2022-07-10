@@ -250,24 +250,24 @@ static void cleanup(int ret)
 static void usage(void)
 {
 	fprintf(stdout, "pactree v" PACKAGE_VERSION "\n\n"
-			"A simple dependency tree viewer.\n\n"
+			"Package dependency tree viewer.\n\n"
 			"Usage: pactree [options] PACKAGE\n\n"
 			"  -a, --ascii            use ASCII characters for tree formatting\n"
-			"  -b, --dbpath <path>    set an alternate database location\n"
-			"  -c, --color            colorize output\n"
-			"  -d, --depth <#>        limit the depth of recursion\n"
-			"  -g, --graph            generate output for graphviz's dot\n"
-			"  -h, --help             display this help message\n"
-			"  -l, --linear           enable linear output\n"
-			"  -r, --reverse          list packages that depend on the named package\n"
-			"  -s, --sync             search sync databases instead of local\n"
-			"  -u, --unique           show dependencies with no duplicates (implies -l)\n"
-			"  -o, --optional[=DEPTH] controls at which depth to stop printing optional deps\n"
-			"                         (-1 for no limit)\n"
-			"  -v, --version          display the version\n"
-			"      --config <path>    set an alternate configuration file\n"
-			"      --debug            display debug messages\n"
-			"      --gpgdir <path>    set an alternate home directory for GnuPG\n");
+			"  -c, --color             colorize output\n"
+			"      --config <path>     set an alternate configuration file\n"
+			"  -b, --dbpath <path>     set an alternate database location\n"
+			"      --gpgdir <path>     set an alternate home directory for GnuPG\n"
+			"  -d, --depth <#>         limit the depth of recursion\n"
+			"  -g, --graph             generate output for graphviz's dot\n"
+			"  -l, --linear            enable linear output\n"
+			"  -o, --optional[=DEPTH]  controls at which depth to stop printing optional deps\n"
+			"                          (-1 for no limit)\n"
+			"  -r, --reverse           list packages that depend on the named package\n"
+			"  -s, --sync              search sync databases instead of local\n"
+			"  -u, --unique            show dependencies with no duplicates (implies -l)\n"
+			"      --debug             display debug messages\n"
+			"  -h, --help              display this help message and exit\n"
+			"  -V, --version           display version information and exit\n");
 }
 
 static void version(void)
@@ -292,7 +292,7 @@ static int parse_options(int argc, char *argv[])
 		{"sync",    no_argument,          0, 's'},
 		{"unique",  no_argument,          0, 'u'},
 		{"optional",optional_argument,    0, 'o'},
-		{"version", no_argument,          0, 'v'},
+		{"version", no_argument,          0, 'V'},
 
 		{"config",  required_argument,    0, OP_CONFIG},
 		{"debug",   no_argument,          0, OP_DEBUG},
@@ -354,7 +354,7 @@ static int parse_options(int argc, char *argv[])
 				unique = 1;
 				style = &graph_linear;
 				break;
-			case 'v':
+			case 'V':
 				version();
 				cleanup(0);
 			case 'o':

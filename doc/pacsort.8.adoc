@@ -27,7 +27,7 @@ Options
 	If the input lists are in the format '\*-\*.pkg.tar*', sort lines by pkgname and pkgver.
 
 *-h, \--help*::
-	Display syntax and command line options.
+	Display syntax and command-line options.
 
 *-k, \--key <index>*::
 	Sort the input starting on the specified column.
@@ -38,7 +38,7 @@ Options
 *-t, \--separator <sep>*::
 	Field separator.  Default separator is space.
 
-*-v, \--version*::
+*-V, \--version*::
 	Display the version.
 
 *-z, \--null*::
