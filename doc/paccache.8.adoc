@@ -32,8 +32,8 @@ Operations
 Options
 -------
 *-a, \--arch <arch>*::
-	Scan for packages for a specific architecture. Default is to scan for
-	all architectures.
+	Scan for packages for a specific architecture. Default is to scan for all
+	architectures.
 
 *\--min-atime <time>*::
 *\--min-mtime <time>*::
@@ -81,8 +81,9 @@ Options
 
 Systemd Timer
 -------------
-The package cache can be cleaned periodically using the systemd timer 'paccache.timer'.
-If the timer is enabled the cache will be cleaned weekly with paccache's default options.
+The package cache can be cleaned periodically using the systemd timer
+'paccache.timer'. If the timer is enabled the cache will be cleaned weekly with
+paccache's default options.
 
 
 See Also

@@ -14,8 +14,8 @@ Synopsis
 Description
 -----------
 Checks for pending updates using a separate Pacman database located in
-*`TMPDIR`* if *`CHECKUPDATES_DB`* is not set and outputs a list of updates with the
-old and new version.
+*`TMPDIR`* if *`CHECKUPDATES_DB`* is not set and outputs a list of updates with
+the old and new version.
 
 
 Options
@@ -30,8 +30,9 @@ Options
 	Do not colorize output.
 
 *-n, \--nosync*::
-	Do not sync the temporary database, works best when the temporary database is
-	updated regularly through some other means such as a cronjob or systemd timer.
+	Do not sync the temporary database, works best when the temporary database
+	is updated regularly through some other means such as a cronjob or systemd
+	timer.
 
 *-V, \--version*::
 	Display version information.

@@ -15,15 +15,16 @@ Description
 -----------
 Pactree produces a dependency tree for a package.
 
-By default, a tree-like output is generated, but with the '\--graph' option, a Graphviz
-description is generated.
+By default, a tree-like output is generated, but with the '\--graph' option, a
+Graphviz description is generated.
 
 
 Options
 -------
 *-a, \--ascii*::
-	Use ASCII characters for tree formatting. By default, pactree will use Unicode
-	line drawing characters if it is able to detect that the locale supports them.
+	Use ASCII characters for tree formatting. By default, pactree will use
+	Unicode line drawing characters if it is able to detect that the locale
+	supports them.
 
 *-b, \--dbpath*::
 	Specify an alternative database location.
@@ -32,9 +33,8 @@ Options
 	Colorize output.
 
 *-d, \--depth <num>*::
-	Limits the number of levels of dependency to show. A zero means
-	show the named package only, one shows the packages that are directly
-	required.
+	Limits the number of levels of dependency to show. A zero means show the
+	named package only, one shows the packages that are directly required.
 
 *-g, \--graph*::
 	Generate a Graphviz description. If this option is given, the '\--color' and
