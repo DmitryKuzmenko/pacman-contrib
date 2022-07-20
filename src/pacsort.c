@@ -429,7 +429,7 @@ static void usage(void)
 			"  -t, --separator <sep>  specify field separator (default: space)\n"
 			"  -z, --null             lines end with null bytes, not newlines\n"
 			"  -h, --help             display this help message and exit\n"
-			"  -V, --version          display version information and exit\n"
+			"  -V, --version          display version information and exit\n\n"
 			"pacsort writes the sorted concatenation of all files, to standard output.\n"
 			"Files should contain a list of inputs to sort.\n\n"
 			"Standard input is read when no files are given.\n");

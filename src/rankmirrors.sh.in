@@ -29,8 +29,8 @@ usage() {
 ${myname} v${myver}
 
 Ranks pacman mirrors by their connection and opening speed. Pacman mirror files
-are located in @sysconfdir@/pacman.d/. It can also rank one mirror if the URL
-is provided.
+are located in @sysconfdir@/pacman.d/. It can also rank one mirror if the URL is
+provided.
 
 Usage: ${myname} [options] MIRRORFILE | URL
 

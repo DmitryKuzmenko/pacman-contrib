@@ -252,6 +252,7 @@ static void usage(void)
 	fprintf(stdout, "pactree v" PACKAGE_VERSION "\n\n"
 			"Package dependency tree viewer.\n\n"
 			"Usage: pactree [options] PACKAGE\n\n"
+			"Options:\n"
 			"  -a, --ascii            use ASCII characters for tree formatting\n"
 			"  -c, --color             colorize output\n"
 			"      --config <path>     set an alternate configuration file\n"
